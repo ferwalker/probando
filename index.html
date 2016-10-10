@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi ejercicio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="build/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </head>
+
+  <body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Dog</a></li>
+          <li><a href="#">Cat</a></li>
+          <li><a href="#">Small pet</a></li>
+          <li><a href="#">Birds</a></li>
+          <li><a href="#">Aquatic</a></li>
+          <li><a class="fa fa-plus" href="#"><span class="type">Vet</span></a></li>
+          <li><a class="fa fa-star" href="#"><span class="type">Exclusives</span></a></li>
+          <li><a href="#">Top brands</a></li>
+          <li><a class="fa fa-tag" href="#"><span class="type">Special offers</span></a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div id="content" class="container">
+
+    <div id="breadcrumbs" class="row">
+      <div class="col-md-12">
+        <b>You are here:</b>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <section id="returning">
+        <h3>Returning Customer</h3>
+        Sing in to speed up the checkout process
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address*</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password*</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <p><a href="#">Forgot your password?</a></p>
+          <p><a href="#">Load data from JSON</a></p>
+          <button type="submit" class="btn sign-in">Sign in</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="col-md-6">
+      <section id="new-costumer" class="gray">
+        <h3>New Customer</h3>
+        <button type="submit" class="btn register">Register</button>
+        <p>Register now and enjoy the advantages of a zooplus account!</p>
+        <p><small>collect loyalty points & get rewards</small></p>
+        <p><small>easy recording without information re-entry</small></p>
+      </section>
+      <section id="checkout" class="gray">
+        <h3>Express Checkout without Registration</h3>
+        <p><small>You can shop here without registering for a costumer account</small></p>
+        <button type="submit" class="btn checkout">Proceed without Registering</button>
+        <p><small>Some automatically applied coupons may not apply with express checkout</small></p>
+      </section>
+    </div>
+  </div>
+
+  <footer class="container-fluid">
+    <div class="row">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Dog</a></li>
+        <li><a href="#">Cat</a></li>
+        <li><a href="#">Small pet</a></li>
+        <li><a href="#">Birds</a></li>
+        <li><a href="#">Aquatic</a></li>
+        <li><a class="vet" href="#">Vet</a></li>
+        <li><a class="exclusives" href="#">Exclusives</a></li>
+        <li><a href="#">Top brands</a></li>
+        <li><a class="offers" href="#">Special offers</a></li>
+      </ul>
+    </div>
+    © 1999-2015, zooplus AG
+  </footer>
+
+  </body>
+  </html>
+</html>

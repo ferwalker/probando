@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi ejercicio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link href="build/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- amcharts -->
+    <script src="node_modules/amcharts3/amcharts/amcharts.js" type="text/javascript"></script>
+    <script src="node_modules/amcharts3/amcharts/pie.js" type="text/javascript"></script>
+    <script src="node_modules/amcharts3/amcharts/themes/black.js" type="text/javascript"></script>
+
+		<!-- amCharts javascript code -->
+		<script type="text/javascript">
+			AmCharts.makeChart("chartdiv",
+				{
+					"type": "pie",
+					"angle": 16.2,
+					"balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+					"depth3D": 15,
+					"innerRadius": "30%",
+					"labelRadius": 10,
+					"minRadius": 0,
+					"alpha": 0.67,
+					"colors": [
+						"#de4c4f",
+						"#eea638",
+						"#86a965",
+						"#8aabb0",
+						"#69c8ff",
+						"#cfd27e",
+						"#9d9888",
+						"#916b8a",
+						"#724887",
+						"#7256bc"
+					],
+					"labelColorField": "#D48484",
+					"outlineThickness": 0,
+					"titleField": "category",
+					"valueField": "column-1",
+					"fontFamily": "arial",
+					"fontSize": 14,
+					"theme": "black",
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"align": "center",
+						"markerType": "circle"
+					},
+					"titles": [],
+					"dataProvider": [
+						{
+							"category": "category 1",
+							"column-1": 8
+						},
+						{
+							"category": "category 2",
+							"column-1": 6
+						},
+						{
+							"category": "category 3",
+							"column-1": 2
+						}
+					]
+				}
+			);
+		</script>
+  </head>
+
+  <body>
+    <div class="breadcrumbs-container">
+      <span>
+        <a href="#">Home</a>
+        <a href="#">Small Pet</a>
+        <a href="#">Small Pet food</a>
+        <a href="#">Hamster Food</a>
+        <a href="#">Versele Laga Premium Mini Hamster Nature</a>
+      </span>
+      <a href="#" class="orange">Upload photo</a>
+    </div>
+    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #222222;" ></div>
+  </body>
+  </html>
+</html>
